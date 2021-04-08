@@ -26,3 +26,5 @@ turns green and the buzzer stops.
 * Cases for button and Arduino
 * Cables
 
+A video of the project can be found
+https://www.youtube.com/watch?v=PaC4f_1M1kU 
