@@ -13,4 +13,7 @@ The following modifications have been made:
   * Switch
   * Transistors
   * Servo motor
-* 
+
+The idea was to install lights (front and back), horn, steering capabilities (the front motor which was for turning left, right was missing) and bluetooth connectivity.
+
+
