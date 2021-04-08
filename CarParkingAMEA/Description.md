@@ -14,6 +14,8 @@ the driver should leave the position empty.
 If the driver has forgotten the pin code or didn't catch up to type it then the traffic light turns red and the buzzer buzzes but if the pin code is given later then the traffic light
 turns green and the buzzer stops.
 
+The pin is implemented with just one push button for simplicity reasons (the project is for a school subject). It can be replaced by a keyboard or anything else. 
+
 ## Materials used
 
 * Arduino Nano
