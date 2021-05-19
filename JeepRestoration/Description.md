@@ -16,4 +16,5 @@ The following modifications have been made:
 
 The idea was to install lights (front and back), horn, steering capabilities (the front motor which was for turning left, right was missing) and bluetooth connectivity.
 
+The car is controlled using the Bluetooth RC Controller Android app https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller&hl=el&gl=US
 
