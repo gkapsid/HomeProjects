@@ -1,3 +1,12 @@
+//19/5/2021 gkapsid 
+//V2 - second version with motor bridge IC
+//the forward backward routines are changed. vehicle with one motor for both left and right wheels.
+// turns left right using a servo motor as steering wheel (like normal cars, not diffential car)
+//SN754410 bridge was used https://www.ti.com/lit/ds/symlink/sn754410.pdf
+// any other H-Bridge can be used adapting the code for forward and backward movement appropriately
+
+// tested ok!
+
 #include <Servo.h>
 #include <Adafruit_NeoPixel.h>
 
