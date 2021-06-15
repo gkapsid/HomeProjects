@@ -40,4 +40,4 @@ The alarm effect was programmed so that it doesn't block the uControler and repe
 * 1 active buzzer
 * jumper cables
 * 1 slide switch DPDT On-Off-On (or ON-ON) Circuit found https://42bots.com/resources/a-circuit-to-use-2-single-cell-li-po-li-on-batteries-in-series-and-charge-them-in-parallel/
-*  
+* 1 LM7805 voltage regulator can be used to provide 5 V to loads like LEDs, active buzzer even the Arduino board. 
