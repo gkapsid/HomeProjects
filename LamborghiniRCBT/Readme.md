@@ -28,3 +28,16 @@ Both problems were addressed with proper code so, the car is still responsive wh
 ### Front and back light and alarm effect (simultaneous blink of all lights)
 
 The alarm effect was programmed so that it doesn't block the uControler and repeat itself after a single "on" command. That way the car can move, turn and change its speed while the lights blink offering a wonderful show!
+
+## Bill of Materials
+
+* 1 Arduino board (Pro Mini used, UNO, Leonardo, Nano etc can be used with almost no code correction)
+* 1 HC-05 or 06 BT module (or any other module can be interfaced with Arduino) 
+* 1 H-bridge custom made or of the shelve
+* LEDs and resistances
+* 2 18650 Li - Ion batteries with cases
+* 1 Lithium battery charger module (with protection) like https://grobotronics.com/lithium-battery-charger-and-protection-module-1a-usb-c-tp4056.html 
+* 1 active buzzer
+* jumper cables
+* 1 slide switch DPDT On-Off-On (or ON-ON) Circuit found https://42bots.com/resources/a-circuit-to-use-2-single-cell-li-po-li-on-batteries-in-series-and-charge-them-in-parallel/
+*  
