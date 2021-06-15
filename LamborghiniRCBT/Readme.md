@@ -17,6 +17,9 @@ A HC-05 bluetooth module was used and it was interfaced directly with the Rx and
 ### H-bridge
 A ready made L298D H-bridge module was used that is widely available and can easily be interfaced with Arduino boards. The board was given raw voltage (8V) so the motors work with at least 6V voltage across their leads. 
 
+### Variable speed (Speed control feature)
+The application is using a slider to send eleven commands (full stop, full speed and 9 speed levels)  that can be used to control the car's motor speed. This has been realised through mapping those levels to PWM levels (1,9, 30, 230). The full range (0, 255) of the Arduino PWM wasn't used because in very low voltages the motor stayed stall something that can lead to motor burn out. The full speed (255) was corresponded to the command q that is for full speed. The level 0 was corresponded to full stop. The car always begin in full speed and the user can adjust it afterwards.  
+
 ### Siren Horn
 A typical active buzzer was used as a horn and it was connected directly on the Arduino pin. It can also be connected through a transistor. The sound is produced by the μControler using a for loop and increasing and decreasing the frequency of a tone. There are two problems here. The first problem is that this procedure is blocking. That means that while the sound is ascending or descending the μControler can't "hear" other commands. The second problem is that the sound production depends on what is received in the serial port of the μControler. So a command is received, the siren sounds and then stops. A new command should be given to continue its operation. 
 
@@ -24,3 +27,4 @@ Both problems were addressed with proper code so the car is still responsive whi
 
 ### Front and back light and alarm effect (simultaneous blink of all lights)
 
+The alarm effect was programmed so that it doesn't block the uControler and repeat itself after a single "on" command. That way the car can move, turn and change its speed while the lights blink offering a wonderful show!
