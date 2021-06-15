@@ -59,9 +59,8 @@ void loop()
     // forward movement
     if (( ( _ABVAR_1_entoli ) == ( 'F' ) ))
     {
-      //  Serial.print(_ABVAR_1_entoli);
+      
       analogWrite(5, carSpeed);
-      // digitalWrite(3, LOW);
       digitalWrite(6, LOW);
       digitalWrite(10, LOW);
       digitalWrite(11, LOW);
@@ -72,8 +71,7 @@ void loop()
       //backwards
       if (( ( _ABVAR_1_entoli ) == ( 'B' ) ))
       {
-        // digitalWrite(3, HIGH);
-        // digitalWrite(4, LOW);
+        
         digitalWrite(5, LOW);
         analogWrite(6, carSpeed);
         digitalWrite(10, LOW);
@@ -85,7 +83,7 @@ void loop()
         if (( ( _ABVAR_1_entoli ) == ( 'L' ) ))
         {
 
-          //    digitalWrite(4, LOW);
+      
           digitalWrite(5, LOW);
           digitalWrite(6, LOW);
           digitalWrite(10, HIGH);
@@ -116,7 +114,7 @@ void loop()
     //Forward left
     if (( ( _ABVAR_1_entoli ) == ( 'G' ) ))
     {
-      //digitalWrite(4, LOW);
+      
       digitalWrite(6, LOW);
       analogWrite(5, carSpeed);
       digitalWrite(10, HIGH);
@@ -125,7 +123,7 @@ void loop()
     // forward right
     if (( ( _ABVAR_1_entoli ) == ( 'I' ) ))
     {
-      // digitalWrite(4, LOW);
+      
       digitalWrite(6, LOW);
       analogWrite(5, carSpeed);
       digitalWrite(10, LOW);
@@ -135,8 +133,7 @@ void loop()
     //back left
     if (( ( _ABVAR_1_entoli ) == ( 'H' ) ))
     {
-      //  Serial.println(carSpeed);
-      //digitalWrite(4, LOW);
+      
       digitalWrite(5, LOW);
       analogWrite(6, carSpeed);
       digitalWrite(10, HIGH);
@@ -146,7 +143,7 @@ void loop()
     // back right
     if (( ( _ABVAR_1_entoli ) == ( 'J' ) ))
     {
-      //digitalWrite(4, LOW);
+      
       digitalWrite(5, LOW);
       analogWrite(6, carSpeed);
       digitalWrite(10, LOW);
@@ -179,7 +176,7 @@ void loop()
     //back lights off
     if (( ( _ABVAR_1_entoli ) == ( 'u' ) ))
     {
-      // digitalWrite(10,LOW);
+      
       digitalWrite(7, LOW);
 
       digitalWrite(8, LOW);
