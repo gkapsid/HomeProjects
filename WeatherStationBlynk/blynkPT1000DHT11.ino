@@ -1,6 +1,6 @@
 //gkapsid
 //worked 18/8/2021
-//needs modification according https://docs.blynk.io/en/blynk.cloud/troubleshooting
+//Blynk example needs modification according https://docs.blynk.io/en/blynk.cloud/troubleshooting
 
 /*************************************************************
   Download latest Blynk library here:
@@ -45,14 +45,14 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "Hvnrg0cmaGLuXdupkrCkp3y1cpg1Uylt";
+char auth[] = "yourAuthenticationKey";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "VODAFONE_7014";
-char pass[] = "fbcu45a9at7auchf";
-bool debug = false;
-#define DHTPIN 14          // What digital pin we're connected to
+char ssid[] = "Your_SSID";
+char pass[] = "Your_Password";
+bool debug = false; // true if debug messages are necessary
+#define DHTPIN 14          // What digital pin DHT11 data pin is connected to
 
 // Uncomment whatever type you're using!
 #define DHTTYPE DHT11     // DHT 11
@@ -75,7 +75,7 @@ float vout;
 const float a = 0.00385;
 const float R0 = 1000;
 float temperature;
-# define windowsize 10
+# define windowsize 10 //how many values to collect and average to extract the final resistance value
 
 void sendSensor()
 {
@@ -109,16 +109,14 @@ void setup()
   digitalWrite(5, HIGH);
   dht.begin();
 
-  // Setup a function to be called every second
+  // Setup a function to be called every a period of time (10000 ms here)
   timer.setInterval(100000L, sendSensor);
 }
 
 void loop()
 
 {
-  // sendSensor();
-  //digitalWrite(5, HIGH);
-  
+    
   if (debug) {
     Serial.println("Running Blynk");
   }
@@ -134,10 +132,11 @@ void loop()
   if (debug) {
     Serial.println("Going to sleep...");
   }
-  //ESP.deepSleep(5 * 1000000);
+ 
 
 }
 
+//temperature calculation and value filtering 
 void calculateTemp() {
   // Average analog input measurement
   int total = 0;
