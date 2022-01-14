@@ -6,8 +6,9 @@
 //control android app https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller&hl=en&gl=US
 
 //latest version 01/06/2021
+
 //car features
-// BT controlled
+// BT controlled HC-05 or 06
 // lights
 //Alarm light on off (police lights implemented with another device with 555 IC)
 //Horn (active buzzer)
@@ -51,7 +52,7 @@ void loop()
   {
     _ABVAR_1_entoli = Serial.read();
     Serial.println(_ABVAR_1_entoli);
-
+// forward move
     if (( ( _ABVAR_1_entoli ) == ( 'F' ) ))
     {
       //  Serial.print(_ABVAR_1_entoli);
@@ -63,6 +64,7 @@ void loop()
     }
     else
     {
+      //backwards move
       if (( ( _ABVAR_1_entoli ) == ( 'B' ) ))
       {
         analogWrite(3, carSpeed);
@@ -72,6 +74,7 @@ void loop()
       }
       else
       {
+        // move left
         if (( ( _ABVAR_1_entoli ) == ( 'L' ) ))
         {
           digitalWrite(3, LOW);
@@ -140,7 +143,6 @@ void loop()
     //front lights on
     if (( ( _ABVAR_1_entoli ) == ( 'W' ) ))
     {
-      // digitalWrite(10, HIGH);
       analogWrite(10, 255);
 
     }
@@ -148,7 +150,6 @@ void loop()
 
     if (( ( _ABVAR_1_entoli ) == ( 'w' ) ))
     {
-      // digitalWrite(2, LOW);
       digitalWrite(10, LOW);
     }
 
@@ -158,10 +159,10 @@ void loop()
     {
       analogWrite(10, 80);
     }
-    //lights off
+    //back lights off
     if (( ( _ABVAR_1_entoli ) == ( 'u' ) ))
     {
-      // digitalWrite(10,LOW);
+      
       digitalWrite(10, LOW);
     }
 
@@ -174,23 +175,23 @@ void loop()
     //horn off
     if (( ( _ABVAR_1_entoli ) == ( 'v' ) ))
     {
-      // digitalWrite(10,LOW);
+      
       digitalWrite(11, LOW);
     }
-    //alarm on
+    //alarm lights on
     if (( ( _ABVAR_1_entoli ) == ( 'X' ) ))
     {
       digitalWrite(12, HIGH);
 
     }
+    // alarm lights off
     if (( ( _ABVAR_1_entoli ) == ( 'x' ) ))
     {
       digitalWrite(12, LOW);
-      // digitalWrite(10,LOW);
-      // digitalWrite(10, LOW);
-      // digitalWrite(11, LOW);
 
     }
+
+// speed control
     if (( ( _ABVAR_1_entoli ) == 'q') || ( ( _ABVAR_1_entoli ) == '0') || ( ( _ABVAR_1_entoli ) == '1') || (( _ABVAR_1_entoli ) == '2' ) || (( _ABVAR_1_entoli ) == '3' ) || (( _ABVAR_1_entoli ) == '4' ) || (( _ABVAR_1_entoli ) == '5' ) || (( _ABVAR_1_entoli ) == '6' ) || (( _ABVAR_1_entoli ) == '7' ) || (( _ABVAR_1_entoli ) == '8' ) || (( _ABVAR_1_entoli ) == '9' ))
     {
 
@@ -214,7 +215,3 @@ void loop()
 
   }
 }
-
-
-
-
