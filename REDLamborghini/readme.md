@@ -4,6 +4,8 @@ I had an old RC (40 MHz) toy car with limited functionality. The remote was only
 
 The existing electronics were removed, leaving inside only the motors. 
 
+A presentation video at: [https://youtu.be/5Fb09UVv9xc](https://youtu.be/5Fb09UVv9xc) 
+
 ## Implemented features
 1. variable speed (ten levels)
 2. moves forward, backward, left, right
