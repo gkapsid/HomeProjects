@@ -1,4 +1,4 @@
-# Lamborghini Blancpain RC BT toy car 
+# Red Lamborghini RC BT toy car 
 
 I had an old RC (40 MHz) toy car with limited functionality. The remote was only for forward backward movement and left, right turning. It was power by 4 AA 1,5 V batteries connected in series, totally 6 V, about 1000 mΑh. 
 
