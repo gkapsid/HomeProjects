@@ -19,7 +19,7 @@ Both projects are modification of older implementations, replacing the Arduino b
 
 ## More Info
 
-Both projects are presented in brief in the YT video: 
+Both projects are presented in brief in the YT video: https://www.youtube.com/watch?v=c2E2xMsiNzU
 
 They are also  implemented and simulated in Tinkercad where someone can find information about the connections between the elements and the code that it was used. 
 
