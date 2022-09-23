@@ -4,7 +4,7 @@ This is the implementation of a kit that I bought from [Grobotronics](https://gr
 
 The kit was very easy to assembly, althought I didn't find the schematic included. The placement of the materials is pretty straightforward except the placement of the three resistances were extra care should be taken because they have two different values.
 
-There are plenty of information [here](https://resources.kitronik.co.uk/pdf/2106_rear_bike_light_essentials_2_0.pdf)
+There is plenty of information [here](https://resources.kitronik.co.uk/pdf/2106_rear_bike_light_essentials_2_0.pdf)
 
 I did the following (minor) modifications: 
 
