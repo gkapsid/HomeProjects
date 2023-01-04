@@ -16,6 +16,14 @@ The ATTiny45 uprocessor that was used was set to operate at 8 MHz internal clock
 
 Both projects are modification of older implementations, replacing the Arduino boards that were used back then. That way an Arduino micro and an Arduino Leonardo were spared for future, larger projects. 
 
+The third project was added later and it was designed from scratch on a ATTiny85 μC. 
+
+It is a decorative light. It can switch between 3 plain colors (white, red and blue) and a rainbow effect. This time a rotary encoder with switch was used to achieve the different operations. The switch is used to move from one color (or effect) to the other. The rotary function of the encoder was used to change the brightness of the LEDs.
+
+The code can be used for many other colors and effects. 
+The code to use  the rotary encoder with the ATTiny85 was from http://angryyak.co.uk/blog/using-a-rotary-encoder-with-arduino-or-attiny85/ 
+The original idea was from https://www.hackster.io/alvaroportu4/bed-light-neopixel-2e75e3 
+
 
 ## More Info
 
@@ -26,6 +34,8 @@ They are also  implemented and simulated in Tinkercad where someone can find inf
 Project 1 Traffic Light [Tinkercad](https://www.tinkercad.com/) link: https://www.tinkercad.com/things/kTIhfkIL52w 
 
 Project 2 NEOPIXEL light [Tinkercad](https://www.tinkercad.com/) link: https://www.tinkercad.com/things/2pyHOAFEE6E 
+
+Project 3 ATTiny decorative light [Tinkercad](https://www.tinkercad.com/) link: https://www.tinkercad.com/things/11Gc88x2S0x
 
 The code is also available here in github.
 
@@ -50,6 +60,18 @@ Procedure for bootloader burning and ATTiny programming: https://create.arduino.
 2. IC holder (8 pins, optional)
 3. NEOPIXEL addressable LEDs (a few)
 4. Light Dependent Resistor (LDR) and simple resistors (a few 1k)
+5. 5 V power supply
+6. A prototyping board
+7. Cables
+8. Case
+
+
+### Poject 3 Decorative Light
+
+1. ATTiny85
+2. IC holder (8 pins, optional)
+3. NEOPIXEL addressable LEDs (a few)
+4. Rotary encoder with switch
 5. 5 V power supply
 6. A prototyping board
 7. Cables
