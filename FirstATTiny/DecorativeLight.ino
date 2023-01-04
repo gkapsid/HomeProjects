@@ -277,6 +277,6 @@ void rainbowb(int wait) {
     if (digitalRead(BUTTON) == LOW) {
       break ;
     }
-    delay(wait);  // Pause for a moment
+    delay(wait);  // Pause for a moment 
   }
 }
