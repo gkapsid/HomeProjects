@@ -18,16 +18,20 @@ Both projects are modification of older implementations, replacing the Arduino b
 
 The third project was added later and it was designed from scratch on a ATTiny85 μC. 
 
-It is a decorative light. It can switch between 3 plain colors (white, red and blue) and a rainbow effect. This time a rotary encoder with switch was used to achieve the different operations. The switch is used to move from one color (or effect) to the other. The rotary function of the encoder was used to change the brightness of the LEDs.
+It is a decorative light. It can switch between 3 plain colors (white, red and blue) and a rainbow effect. This time a rotary encoder with switch was used to achieve the different operations. The switch is used to move from one color (or effect) to the other. The rotary function of the encoder is used to change the brightness of the LEDs.
 
 The code can be used for many other colors and effects. 
+
 The code to use  the rotary encoder with the ATTiny85 was from http://angryyak.co.uk/blog/using-a-rotary-encoder-with-arduino-or-attiny85/ 
+
 The original idea was from https://www.hackster.io/alvaroportu4/bed-light-neopixel-2e75e3 
 
 
 ## More Info
 
-Both projects are presented in brief in the YT video: https://www.youtube.com/watch?v=c2E2xMsiNzU
+The first two projects are presented in brief in the YT video: https://www.youtube.com/watch?v=c2E2xMsiNzU
+
+The Decorative Light is presented in the video: https://youtu.be/ds3N2ZJQoPE .
 
 They are also  implemented and simulated in Tinkercad where someone can find information about the connections between the elements and the code that it was used. 
 
