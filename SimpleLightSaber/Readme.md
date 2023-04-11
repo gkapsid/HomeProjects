@@ -1,4 +1,4 @@
-Stimple Lightsaber toy
+# Stimple Lightsaber toy
 
 This is another ATTiny85 project. 
 
@@ -6,11 +6,11 @@ It's a toy with some functionality resampling the legendary Star Wars lightsaber
 
 The saber can:
 
-Light in color RED
-Light in a Rainbow effect (May the Rainbow magic be with you!)
-Lights off when not in hand. 
+* Light in color RED
+* Light in a Rainbow effect (May the Rainbow magic be with you!)
+* Light off when not in hand. 
 
-Bill of materials
+## Bill of materials
 
 1. An old toy
 2. An ATtiny85 (maybe a 45 is also enough but not tested)
