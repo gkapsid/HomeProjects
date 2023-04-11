@@ -1,4 +1,4 @@
-# Stimple Lightsaber toy
+# Simple Lightsaber toy
 
 This is another ATTiny85 project. 
 
