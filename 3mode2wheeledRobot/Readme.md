@@ -1,4 +1,4 @@
-# 2 Wheeled robot car with 3 modes of operation
+# Two Wheeled robot car with 3 modes of operation
 
 ## Intro
 
