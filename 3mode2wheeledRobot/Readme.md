@@ -19,4 +19,8 @@ The implemented algorithm  is simple yet effective. The robot goes forward. If t
 ### Line follower
 A simple follow line algorithm is implemented. Two sensors at the front part of the robot are used.
 
-### 
+### Line follower with simple obstacle avoidance
+The robot follows a line but if the ultrasonic detector detects an obstacle then stops. If the obstacle is removed the robot continues to follow the line.
+
+## Video presentation
+
